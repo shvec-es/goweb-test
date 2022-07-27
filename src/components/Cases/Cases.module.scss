@@ -1,0 +1,55 @@
+@import 'stylesheets/variables.scss';
+
+.cases {
+  padding: 40px 20px;
+  text-align: center;
+  color: $secondColor;
+}
+
+.pretitle {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+
+.text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .cases {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .pretitle {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 1.65;
+  }
+
+  .title {
+    margin-bottom: 24px;
+  }
+
+  .text {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+@media (min-width: 1360px) {
+  .cases {
+    padding: 80px 28px;
+  }
+}

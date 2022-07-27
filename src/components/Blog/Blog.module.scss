@@ -1,0 +1,87 @@
+@import 'stylesheets/variables.scss';
+
+.photo {
+  width: 320px;
+  height: 247px;
+}
+
+.description {
+  padding: 40px 20px 40px;
+  background-color: $blogBgColor;
+  color: $mainColor;
+}
+
+.date {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+.title {
+  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+
+.text {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.button {
+  width: 184px;
+  height: 47px;
+  border: 1px solid $mainColor;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: inherit;
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .blog {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .photo {
+    width: 368px;
+    height: 100%;
+  }
+
+  .description {
+    padding-left: 32px;
+    padding-right: 53px;
+  }
+
+  .date {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .button {
+    width: 196px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .blog {
+    height: 456px;
+  }
+  .photo {
+    width: 670px;
+  }
+
+  .description {
+    padding: 80px 56px 80px 28px;
+  }
+}

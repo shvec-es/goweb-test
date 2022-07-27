@@ -1,0 +1,48 @@
+@import 'stylesheets/variables.scss';
+
+.hero {
+  color: $titleColor;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 1.27;
+}
+
+.text {
+  margin-bottom: 24px;
+  font-size: 22px;
+  line-height: 1.67;
+}
+
+.button {
+  margin-bottom: 96px;
+  width: 156px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 1.6;
+  background: $accentColor;
+  color: $mainColor;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .title {
+    margin-bottom: 24px;
+    font-size: 55px;
+    line-height: 1.2;
+  }
+  .text {
+    margin-bottom: 32px;
+  }
+  .button {
+    // margin-bottom: 410px;
+    width: 165px;
+    height: 48px;
+  }
+}

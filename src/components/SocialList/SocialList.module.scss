@@ -1,0 +1,28 @@
+@import 'stylesheets/variables.scss';
+
+.soclist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socitem {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.socicon {
+  width: 25px;
+  height: 25px;
+  fill: $mainColor;
+
+  &:hover {
+    fill: $blogBgColor;
+  }
+
+  @media (min-width: 1360px) {
+    width: 35px;
+    height: 35px;
+  }
+}
