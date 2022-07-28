@@ -4,6 +4,7 @@ import Header from './Header';
 import Hero from './Hero';
 import About from './About';
 import Cases from './Cases';
+import GalleryCases from './Gallery';
 import Blog from './Blog';
 import Team from './Team';
 import SocialList from './SocialList';
@@ -17,6 +18,7 @@ export {
   Hero,
   About,
   Cases,
+  GalleryCases,
   Blog,
   Team,
   SocialList,

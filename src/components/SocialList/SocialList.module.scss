@@ -17,8 +17,10 @@
   height: 25px;
   fill: $mainColor;
 
+  transition: fill $transitionDuration $transitionAnim;
+
   &:hover {
-    fill: $blogBgColor;
+    fill: rgba(255, 255, 255, 0.8);
   }
 
   @media (min-width: 1360px) {

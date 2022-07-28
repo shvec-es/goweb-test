@@ -3,6 +3,7 @@
 .hero {
   color: $titleColor;
   text-align: center;
+  padding-top: 140px;
 }
 
 .title {
@@ -24,14 +25,25 @@
   height: 45px;
   font-size: 16px;
   line-height: 1.6;
-  background: $accentColor;
+  background-color: $accentColor;
   color: $mainColor;
   border-radius: 5px;
   outline: none;
   border: none;
+
+  transition: background-color $transitionDuration $transitionAnim;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(40, 167, 69, 0.7);
+  }
 }
 
 @media (min-width: 768px) {
+  .hero {
+    padding-top: 400px;
+  }
+
   .title {
     margin-bottom: 24px;
     font-size: 55px;
@@ -41,8 +53,13 @@
     margin-bottom: 32px;
   }
   .button {
-    // margin-bottom: 410px;
     width: 165px;
     height: 48px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .hero {
+    padding-top: 280px;
   }
 }

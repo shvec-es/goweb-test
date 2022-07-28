@@ -1,10 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import s from './Header.module.scss';
 import icons from 'images/sprite.svg';
 
 const Header = () => {
+  useEffect(() => {
+    const headerEl = document.getElementById('header');
+    const addHeaderOpacity = () => {
+      if (window.scrollY < headerEl.clientHeight) {
+        headerEl.style.backgroundColor = 'rgb(0,0,0,0)';
+        headerEl.style.position = 'absolute';
+      } else {
+        headerEl.style.backgroundColor = 'rgba(0,0,0,0.4)';
+        headerEl.style.position = 'fixed';
+      }
+    };
+
+    window.addEventListener('scroll', addHeaderOpacity);
+  }, []);
+
+  const handleClick = e => {
+    e.preventDefault();
+    const target = e.target.getAttribute('href');
+    const location = document.querySelector(target).offsetTop;
+
+    window.scrollTo({
+      left: 0,
+      top: location - document.getElementById('header').clientHeight,
+    });
+  };
   return (
-    <header className={s.header}>
+    <header className={s.header} id="header">
       <div>
         <a href="/" className={s.logo}>
           <svg width="40" height="35">
@@ -19,19 +44,29 @@ const Header = () => {
       <nav className={s.nav}>
         <ul className={s.menu}>
           <li className={s.item}>
-            <a href="/">Home</a>
+            <a href="#home" onClick={handleClick}>
+              Home
+            </a>
           </li>
           <li className={s.item}>
-            <a href="#about">About</a>
+            <a href="#about" onClick={handleClick}>
+              About
+            </a>
           </li>
           <li className={s.item}>
-            <a href="#cases">Cases</a>
+            <a href="#cases" onClick={handleClick}>
+              Cases
+            </a>
           </li>
           <li className={s.item}>
-            <a href="#blog">Blog</a>
+            <a href="#blog" onClick={handleClick}>
+              Blog
+            </a>
           </li>
           <li className={s.item}>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={handleClick}>
+              Contact
+            </a>
           </li>
         </ul>
       </nav>

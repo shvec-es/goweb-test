@@ -67,6 +67,13 @@
 
   outline: none;
   border: none;
+
+  transition: background-color $transitionDuration $transitionAnim;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(40, 167, 69, 0.7);
+  }
 }
 
 @media (min-width: 768px) {

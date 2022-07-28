@@ -1,6 +1,5 @@
 import {
   About,
-  Background,
   Blog,
   Cases,
   Contact,
@@ -14,12 +13,8 @@ import {
 function App() {
   return (
     <>
-      <Background>
-        <Container>
-          <Header />
-          <Hero />
-        </Container>
-      </Background>
+      <Header />
+      <Hero />
       <Container>
         <About />
         <Cases />

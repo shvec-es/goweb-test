@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Blog.module.scss';
+import icons from 'images/sprite.svg';
 import blogW1 from 'images/home/blog.webp';
 import blogW2 from 'images/home/blog@2x.webp';
 import blogJ1 from 'images/home/blog.jpg';
@@ -22,7 +23,12 @@ const Blog = () => {
           illum dolore explicabo ab dolores itaque rerum temporibus doloribus
           iste maiores deleniti?
         </p>
-        <button className={s.button}>Read Our Blog</button>
+        <button className={s.button}>
+          <svg className={s.icon}>
+            <use href={`${icons}#arrow`} />
+          </svg>
+          Read Our Blog
+        </button>
       </div>
     </section>
   );

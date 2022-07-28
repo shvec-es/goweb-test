@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './About.module.scss';
+import icons from 'images/sprite.svg';
 import peopleW1 from 'images/home/people.webp';
 import peopleW2 from 'images/home/people@2x.webp';
 import peopleJ1 from 'images/home/people.jpg';
@@ -36,7 +37,12 @@ const About = () => {
           illum dolore explicabo ab dolores itaque rerum temporibus doloribus
           iste maiores deleniti?
         </p>
-        <button className={s.button}>Read more</button>
+        <button className={s.button}>
+          <svg className={s.icon}>
+            <use href={`${icons}#arrow`} />
+          </svg>
+          Read more
+        </button>
       </div>
     </section>
   );

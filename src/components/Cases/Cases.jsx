@@ -1,7 +1,7 @@
 import React from 'react';
+import 'photoswipe/dist/photoswipe.css';
 import s from './Cases.module.scss';
-// import IMAGES from 'images/cases';
-// import case1J1 from 'images/cases/cases1.jpg';
+import { GalleryCases } from 'components';
 
 const Cases = () => {
   return (
@@ -12,26 +12,7 @@ const Cases = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         sapiente!
       </p>
-      {/* <ul>
-        <li>
-          <img src={case1J1} alt="case1" />
-        </li>
-        <li>
-          <img src={IMAGES.case2J1} alt="case2" />
-        </li>
-        <li>
-          <img src={IMAGES.case3J1} alt="case3" />
-        </li>
-        <li>
-          <img src={IMAGES.case4J1} alt="case4" />
-        </li>
-        <li>
-          <img src={IMAGES.case5J1} alt="case5" />
-        </li>
-        <li>
-          <img src={IMAGES.case6J1} alt="case6" />
-        </li>
-      </ul> */}
+      <GalleryCases />
     </section>
   );
 };

@@ -31,10 +31,15 @@
 
 .photo-wrapper {
   position: relative;
+
+  transition: transform $transitionDuration $transitionAnim;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
 }
 .photo {
   width: 280px;
-  //   height: 146px;
   margin-bottom: 16px;
 }
 
@@ -60,7 +65,7 @@
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.6);
-  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.6);
   opacity: 0;
 
   transition: opacity $transitionDuration $transitionAnim;

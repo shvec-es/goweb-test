@@ -15,8 +15,8 @@ const Contact = () => {
           <label className={s.label}>Enter your name</label>
         </div>
         <div className={s.thumb}>
-          <input className={s.input} type="email" name="email" />
-          <label className={s.label}>Enter email*</label>
+          <input className={s.input} type="email" name="email" required />
+          <label className={s.label}>Enter email</label>
         </div>
         <button className={s.button} type="submit">
           Send
