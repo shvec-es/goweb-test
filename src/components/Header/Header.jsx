@@ -28,6 +28,7 @@ const Header = () => {
       top: location - document.getElementById('header').clientHeight,
     });
   };
+
   return (
     <header className={s.header} id="header">
       <div>

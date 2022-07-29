@@ -21,12 +21,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .socitem {
   &:not(:last-child) {
     margin-right: 25px;
   }
+}
+
+.soclink {
+  display: block;
+  height: 25px;
 }
 
 .socicon {
@@ -39,8 +45,13 @@
   &:hover {
     fill: $accentColor;
   }
+}
 
-  @media (min-width: 1360px) {
+@media (min-width: 1360px) {
+  .soclink {
+    height: 35px;
+  }
+  .socicon {
     width: 35px;
     height: 35px;
   }

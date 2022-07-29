@@ -5,7 +5,12 @@
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url('../../images/home/showcase.jpg');
+    image-set(
+      url('../../images/home/showcase.jpg') 1x,
+      url('../../images/home/showcase@2x.jpg') 2x,
+      url('../../images/home/showcase.webp') 1x,
+      url('../../images/home/showcase@2x.webp') 2x
+    );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

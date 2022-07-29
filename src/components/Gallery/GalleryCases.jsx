@@ -35,7 +35,13 @@ const GalleryCases = () => {
   return (
     <div className={s.gallery}>
       <Gallery options={{ mainClass: 'pswp-with-perma-preloader' }}>
-        <Item original={case1J1} thumbnail={case1J1} width="1024" height="768">
+        <Item
+          original={case1J1}
+          originalSrcset={(case1J1, case1J2, case1W1, case1W2)}
+          thumbnail={case1J1}
+          width="1024"
+          height="768"
+        >
           {({ ref, open }) => (
             <picture>
               <source
@@ -56,7 +62,13 @@ const GalleryCases = () => {
             </picture>
           )}
         </Item>
-        <Item original={case2J1} thumbnail={case2J1} width="1024" height="768">
+        <Item
+          original={case2J1}
+          thumbnail={case2J1}
+          originalSrcset={(case2J1, case2J2, case2W1, case2W2)}
+          width="1024"
+          height="768"
+        >
           {({ ref, open }) => (
             <picture>
               <source
@@ -77,7 +89,13 @@ const GalleryCases = () => {
             </picture>
           )}
         </Item>
-        <Item original={case3J1} thumbnail={case3J1} width="1024" height="768">
+        <Item
+          original={case3J1}
+          thumbnail={case3J1}
+          originalSrcset={(case3J1, case3J2, case3W1, case3W2)}
+          width="1024"
+          height="768"
+        >
           {({ ref, open }) => (
             <picture>
               <source
@@ -98,7 +116,13 @@ const GalleryCases = () => {
             </picture>
           )}
         </Item>
-        <Item original={case4J1} thumbnail={case4J1} width="1024" height="768">
+        <Item
+          original={case4J1}
+          thumbnail={case4J1}
+          originalSrcset={(case4J1, case4J2, case4W1, case4W2)}
+          width="1024"
+          height="768"
+        >
           {({ ref, open }) => (
             <picture>
               <source
@@ -119,7 +143,13 @@ const GalleryCases = () => {
             </picture>
           )}
         </Item>
-        <Item original={case5J1} thumbnail={case5J1} width="1024" height="768">
+        <Item
+          original={case5J1}
+          thumbnail={case5J1}
+          originalSrcset={(case5J1, case5J2, case5W1, case5W2)}
+          width="1024"
+          height="768"
+        >
           {({ ref, open }) => (
             <picture>
               <source
@@ -140,7 +170,13 @@ const GalleryCases = () => {
             </picture>
           )}
         </Item>
-        <Item original={case6J1} thumbnail={case6J1} width="1024" height="768">
+        <Item
+          original={case6J1}
+          thumbnail={case6J1}
+          originalSrcset={(case6J1, case6J2, case6W1, case6W2)}
+          width="1024"
+          height="768"
+        >
           {({ ref, open }) => (
             <picture>
               <source

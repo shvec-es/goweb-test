@@ -12,6 +12,11 @@
   }
 }
 
+.soclink {
+  display: block;
+  height: 25px;
+}
+
 .socicon {
   width: 25px;
   height: 25px;
@@ -22,8 +27,13 @@
   &:hover {
     fill: rgba(255, 255, 255, 0.8);
   }
+}
 
-  @media (min-width: 1360px) {
+@media (min-width: 1360px) {
+  .soclink {
+    height: 35px;
+  }
+  .socicon {
     width: 35px;
     height: 35px;
   }

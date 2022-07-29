@@ -25,23 +25,6 @@
   line-height: 1.6;
 }
 
-// .gallery {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-//   grid-auto-rows: 176px;
-//   grid-gap: 8px;
-// }
-
-// .picture {
-//   width: 280px;
-//   height: 176px;
-//   cursor: zoom-in;
-
-//   &:hover {
-//     opacity: 0.9;
-//   }
-// }
-
 @media (min-width: 768px) {
   .cases {
     padding-left: 32px;
@@ -63,31 +46,10 @@
     font-size: 18px;
     line-height: 1.56;
   }
-
-  // .gallery {
-  //   grid-template-columns: repeat(auto-fill, minmax(223px, 1fr));
-  //   grid-auto-rows: 148px;
-  //   grid-gap: 15px;
-  // }
-
-  // .picture {
-  //   width: 223px;
-  //   height: 148px;
-  // }
 }
 
 @media (min-width: 1360px) {
   .cases {
     padding: 80px 28px;
   }
-
-  // .gallery {
-  //   grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-  //   grid-auto-rows: 280px;
-  // }
-
-  // .picture {
-  //   width: 420px;
-  //   height: 280px;
-  // }
 }

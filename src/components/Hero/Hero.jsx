@@ -1,7 +1,6 @@
-import Background from 'components/Background';
-import Container from 'components/Container';
 import React from 'react';
 import s from './Hero.module.scss';
+import { Background, Container } from 'components';
 
 const Hero = () => {
   return (

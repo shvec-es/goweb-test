@@ -3,12 +3,22 @@
 .photo {
   width: 320px;
   height: 220px;
+  background-image: image-set(
+    url('../../images/home/people.jpg') 1x,
+    url('../../images/home/people@2x.jpg') 2x,
+    url('../../images/home/people.webp') 1x,
+    url('../../images/home/people@2x.webp') 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .description {
   padding: 40px 30px;
   background: $accentColor;
   color: $mainColor;
+  box-sizing: border-box;
 }
 
 .title {
@@ -58,12 +68,7 @@
   margin-right: 10px;
   width: 10px;
   height: 20px;
-  fill: $mainColor;
-
-  &:hover,
-  &:focus {
-    fill: $accentColor;
-  }
+  fill: currentColor;
 }
 
 @media (min-width: 768px) {
@@ -71,22 +76,14 @@
     display: flex;
   }
 
-  .photo {
-    width: 368px;
-    height: 100%;
-  }
-
   .description {
+    width: 400px;
     padding-right: 55px;
   }
 
   .title {
     font-size: 20px;
     line-height: 1.65;
-  }
-
-  .liketitle {
-    padding-right: 100px;
   }
 
   .text {
@@ -100,12 +97,33 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1359px) {
+  .photo {
+    width: 368px;
+    height: 589px;
+    background-image: rgba(0, 0, 0, 0.4),
+      image-set(
+        url('../../images/home/people-tablet.jpg') 1x,
+        url('../../images/home/people-tablet@2x.jpg') 2x,
+        url('../../images/home/people-tablet.webp') 1x,
+        url('../../images/home/people-tablet@2x.webp') 2x
+      );
+  }
+
+  .liketitle {
+    padding-right: 100px;
+  }
+}
+
 @media (min-width: 1360px) {
   .photo {
     width: 670px;
+    height: 460px;
   }
 
   .description {
+    width: 690px;
+    height: 460px;
     padding: 80px 64px 80px 20px;
   }
 }
